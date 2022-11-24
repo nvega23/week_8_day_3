@@ -6,9 +6,9 @@ class Clock {
       // 1. Create a Date object.
       // 2. Store the hours, minutes, and seconds.
       // 3. Call printTime.
+      this.printTime()
       // 4. Schedule the tick at 1 second intervals.
       setInterval(this._tick.bind(this), 1000)
-      this.printTime()
     }
 
     printTime() {
@@ -36,6 +36,7 @@ class Clock {
       }
       this.printTime()
     }
+
 }
 
 const clock = new Clock(23,59,55);
